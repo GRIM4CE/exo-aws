@@ -1,0 +1,38 @@
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: $gutter * 1.5;
+  padding: .5rem;
+  border: 1px solid $light-gray;
+  font-size: 18px;
+  appearance: none;
+
+  &.invalid,
+  &.error {
+    margin-bottom: 0;
+  }
+
+  &:placeholder-shown {
+    color: $gray;
+    font-size: 18px;
+  }
+}
+
+input[type="submit"] {
+  @extend %solid-button;
+}
+
+.hs-error-msgs {
+  margin: $gutter / 2 0 $gutter * 1.5;
+  padding: 0;
+  color: $primary;
+
+  li {
+    list-style: none;
+  }
+}

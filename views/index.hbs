@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>modev</title>
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/7286eb8817.js"></script>
+
+  <link rel="stylesheet" href="../css/basic.css">
+  <script src="../js/2017-Launch-Page.js"></script>
+</head>
+
+<body>
+  <h1 style="text-align: left;">Modev Master Page</h1>
+  <ul>
+    {{#each links}}
+      <li><a href="html/{{this.url}}">{{this.title}}</a></li>
+    {{/each}}
+  </ul>
+</body>
+
+</html>

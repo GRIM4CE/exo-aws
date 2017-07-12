@@ -1,0 +1,22 @@
+$header-height: 60px;
+
+*,
+body,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page-center {
+  max-width: 960px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+//Hubspot Specific
+.widget-type-raw_jinja {
+  min-height: 0 !important;
+}

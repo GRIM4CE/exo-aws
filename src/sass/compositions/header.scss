@@ -1,0 +1,48 @@
+.page-header {
+  display: grid;
+  height: 60px;
+  padding: .5rem 1rem;
+  background-color: $black;
+  grid-template-columns: 1fr;
+}
+
+.page-header-date {
+  margin-top: .5rem;
+  color: $white;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-header-button-container {
+  margin-top: .75rem;
+  text-align: center;
+}
+
+.page-header-button {
+  @extend %solid-button;
+}
+
+@media all and (min-width: 37.5rem) {
+  .page-header {
+    display: grid;
+    height: 60px;
+    padding: .5rem 1rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(auto, 480px));
+    grid-gap: 1rem;
+    align-items: center;
+  }
+
+  .page-header-date {
+    grid-column: 1;
+    text-align: inherit;
+  }
+
+  .page-header-button-container {
+    grid-column: 2;
+    justify-self: end;
+    text-align: inherit;
+  }
+}
