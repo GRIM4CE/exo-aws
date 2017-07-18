@@ -1,0 +1,32 @@
+.about-section {
+  min-height: 100vh;
+
+  > div:last-child {
+    background-color: $primary300;
+  }
+}
+
+
+@media all and (min-width: 37.5rem) {
+  .about-section {
+    > div {
+      grid-column: span 2;
+    }
+
+    > div:last-child {
+      grid-column: span 2;
+    }
+  }
+}
+
+@media all and (min-width: 75rem) {
+  .about-section {
+    > div {
+      grid-column: span 3;
+    }
+
+    > div:last-child {
+      grid-column: span 2;
+    }
+  }
+}

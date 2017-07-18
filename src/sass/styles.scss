@@ -5,9 +5,16 @@
 @import 'elements/links';
 @import 'elements/buttons';
 @import 'elements/forms';
+@import 'elements/background';
+
+@import 'components/about';
+@import 'components/schedule-day';
 
 @import 'compositions/header';
 @import 'compositions/hero';
+@import 'compositions/aside-form';
+@import 'compositions/schedule';
 @import 'compositions/footer';
 
-@import 'layouts/containers'
+@import 'layouts/about';
+@import 'layouts/containers';

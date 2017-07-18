@@ -1,5 +1,33 @@
 .hero {
-  display: grid;
-  height: calc(100vh - 60px);
-  background-color: $primary;
+  display: grid !important;
+  align-items: flex-end;
+  justify-content: center;
+  height: calc(100vh - 130px);
+  padding: 1.5rem $mobile-gutter;
+  background-color: $primary500;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: $white;
+  grid-template-columns: minmax(auto, 960px);
+
+  & > div {
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
+
+.hero-header {
+  margin-bottom: 0;
+}
+
+.hero-subheader {
+  margin-bottom: .5rem;
+}
+@media all and (min-width: 37.5rem) {
+  .hero {
+    height: calc(100vh - 60px);
+    padding: 1rem $desktop-gutter;
+    grid-template-rows: 1fr minmax(2rem, 10%);
+  }
 }

@@ -1,22 +1,26 @@
 .page-header {
   display: grid;
-  height: 60px;
-  padding: .5rem 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  height: 130px;
+  padding: .5rem $mobile-gutter;
   background-color: $black;
+  color: $white;
+  z-index: 10;
   grid-template-columns: 1fr;
 }
 
 .page-header-date {
-  margin-top: .5rem;
+  margin: 1rem 0;
   color: $white;
   font-size: 18px;
   letter-spacing: 4px;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .page-header-button-container {
-  margin-top: .75rem;
+  margin-top: -1rem;
   text-align: center;
 }
 
@@ -26,23 +30,28 @@
 
 @media all and (min-width: 37.5rem) {
   .page-header {
-    display: grid;
-    height: 60px;
-    padding: .5rem 1rem;
-    justify-content: center;
-    grid-template-columns: repeat(2, minmax(auto, 480px));
-    grid-gap: 1rem;
     align-items: center;
-  }
-
-  .page-header-date {
-    grid-column: 1;
-    text-align: inherit;
+    height: 60px;
+    padding: .5rem $tablet-gutter;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
 
   .page-header-button-container {
-    grid-column: 2;
-    justify-self: end;
+    margin-top: 0;
     text-align: inherit;
+    justify-self: end;
+    grid-column: 2;
+  }
+
+  .page-header-date {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+@media all and (min-width: 70rem) {
+  .page-header {
+    padding: .5rem $desktop-gutter;
   }
 }

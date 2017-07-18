@@ -1,0 +1,33 @@
+.side-triangle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 30px solid $white;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
+
+.aside-form-container {
+  color: $white;
+
+  .hs-error-msgs {
+    color: $white;
+  }
+
+  input[type="submit"] {
+    @extend %solid-button-white;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .side-triangle {
+    top: inherit;
+    left: 0;
+    transform: translateX(0);
+    border-top: 30px solid transparent;
+    border-right: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid $white;
+  }
+}

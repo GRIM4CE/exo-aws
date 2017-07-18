@@ -1,0 +1,26 @@
+.schedule-header-date {
+  padding: .75rem 2rem;
+  background-color: $secondary500;
+  font-size: 28px;
+}
+
+.schedule-day-main {
+  padding: 1.5rem 2rem;
+  background-color: $background800;
+}
+
+.schedule-time {
+  margin-bottom: .25rem;
+  color: $primary500;
+  font-family: $base-font;
+  font-size: 22px;
+}
+
+.schedule-description {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

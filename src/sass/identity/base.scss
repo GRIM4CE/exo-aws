@@ -1,4 +1,7 @@
 $header-height: 60px;
+$mobile-gutter: 1.5rem;
+$tablet-gutter: 2rem;
+$desktop-gutter: 3rem;
 
 *,
 body,
@@ -6,8 +9,10 @@ html {
   box-sizing: border-box;
 }
 
+html,
 body {
   margin: 0;
+  font-size: 16px;
 }
 
 .page-center {

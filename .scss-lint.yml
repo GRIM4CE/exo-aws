@@ -1,0 +1,15 @@
+linters:
+  PropertySortOrder:
+    order: smacss
+
+  NestingDepth:
+    max_depth: 4
+
+  ImportantRule:
+    enabled: false
+
+  UrlFormat:
+      enabled: false
+
+  SelectorFormat:
+      enabled: false

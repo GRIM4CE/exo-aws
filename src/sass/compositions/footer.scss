@@ -13,35 +13,14 @@
     font-size: 2rem;
 
     &:hover {
-      color: $primary;
+      color: $primary500;
     }
   }
 }
 
-.footer-navigation {
-  display: flex;
+.links-container {
   width: 100%;
-  color: $primary;
-
-  ul {
-    display: inline-block;
-    margin: 0 auto;
-  }
-
-  li {
-    display: inline-block;
-    padding: 0 $gutter;
-  }
-
-  a {
-    color: $white;
-    font-size: 400;
-
-    &:hover {
-      color: $primary;
-      text-decoration: underline;
-    }
-  }
+  text-align: center;
 }
 
 .copyright {
