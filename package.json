@@ -7,7 +7,7 @@
     "css": "postcss -u autoprefixer -r dist/css/*.css",
     "sass": "node-sass --output-style compressed src/sass/styles.scss dist/css/styles.css && npm run css",
     "sass:w": "nodemon -e scss -x \"npm run sass\"",
-    "js": "webpack -p",
+    "js": "webpack -p -w",
     "start": "concurrently \"npm run sass:w\" \"npm run js\" \"node index.js\""
   },
   "babel": {

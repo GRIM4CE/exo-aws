@@ -2,8 +2,8 @@
   display: grid !important;
   align-items: flex-end;
   justify-content: center;
-  height: calc(100vh - 130px);
-  padding: 1.5rem $mobile-gutter;
+  height: calc(100vh - 60px);
+  padding: 1rem $mobile-gutter 4rem;
   background-color: $primary500;
   background-repeat: no-repeat;
   background-position: center center;
@@ -22,11 +22,17 @@
 }
 
 .hero-subheader {
-  margin-bottom: .5rem;
+  margin-bottom: 0;
 }
+
+.hero-disclaimer {
+  font-weight: 300;
+}
+
 @media all and (min-width: 37.5rem) {
   .hero {
     height: calc(100vh - 60px);
+    margin-bottom: 60px;
     padding: 1rem $desktop-gutter;
     grid-template-rows: 1fr minmax(2rem, 10%);
   }
